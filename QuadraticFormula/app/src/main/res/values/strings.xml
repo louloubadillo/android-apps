@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Quadratic Formula</string>
+    <string name="ingresa_el_valor_de_a">Ingresa el valor de a</string>
+    <string name="ecuaciones_de_segundo_grado">Ecuaciones de Segundo Grado</string>
+    <string name="ingresa_el_valor_de_b">Ingresa el valor de b</string>
+    <string name="general_formula">general formula</string>
+</resources>
