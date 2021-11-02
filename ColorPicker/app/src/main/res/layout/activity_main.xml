@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="#FFF"
+        android:padding="15dp"
+        android:text="Escoge el color de fondo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textRojo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="#FFF"
+        android:padding="10dp"
+        android:text="Rojo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+    <SeekBar
+        android:id="@+id/sliderRojo"
+        android:layout_width="363dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        android:max="255"
+        android:progress="255"
+        android:progressTint="#F44336"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textRojo" />
+
+    <TextView
+        android:id="@+id/textVerde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="#FFF"
+        android:padding="10dp"
+        android:text="Verde"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sliderRojo" />
+
+    <SeekBar
+        android:id="@+id/sliderVerde"
+        android:layout_width="363dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        android:max="255"
+        android:progress="255"
+        android:progressTint="#4CAF50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textVerde" />
+
+    <TextView
+        android:id="@+id/textAzul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="#FFF"
+        android:padding="10dp"
+        android:text="Azul"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sliderVerde" />
+
+    <SeekBar
+        android:id="@+id/sliderAzul"
+        android:layout_width="363dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        android:max="255"
+        android:progress="255"
+        android:progressTint="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAzul" />
+
+    <Button
+        android:id="@+id/btnSeleccionar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Seleccionar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sliderAzul" />
+
+    <TextView
+        android:id="@+id/editColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="#FFF"
+        android:padding="10dp"
+        android:text="Color: (255,255,255))"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSeleccionar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
